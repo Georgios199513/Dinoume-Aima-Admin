@@ -1,0 +1,124 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "hospitalsCreated",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isActive",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CenterCode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "UsersParticipated",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "EventDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "EventHospitalPlanner",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "EventDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isNyaUser",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "NYAUserHospital",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "hospitals",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Created",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "CenterCode",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "eventState",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "EventDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Address.Region",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "eventState",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "EventDate",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "Events",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "Address.Region",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "EventDate",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
